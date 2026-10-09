@@ -1,5 +1,4 @@
 class TopController < ApplicationController
-  # 追加
   def main
     if session[:login_uid].nil?
       render :login

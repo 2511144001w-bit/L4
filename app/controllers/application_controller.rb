@@ -4,7 +4,6 @@ class ApplicationController < ActionController::Base
 
   # Changes to the importmap will invalidate the etag for HTML responses
   stale_when_importmap_changes
-  # 追加
   def L4
     session[:c] ||= 0
     session[:c] = session[:c].to_i + 1
