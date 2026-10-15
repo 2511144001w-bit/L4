@@ -1,7 +1,7 @@
 one:
   uid: kindai
-  pass: sanriko
+  pass: <%= BCrypt::Password.create("sanriko") %>
 
 two:
   uid: student
-  pass: practice
+  pass: <%= BCrypt::Password.create("practice") %>
