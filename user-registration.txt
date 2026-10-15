@@ -1,0 +1,4 @@
+ruby bin/rails console
+
+User.create!(uid: "kindai", pass: BCrypt::Password.create("sanriko"))
+User.create!(uid: "student", pass: BCrypt::Password.create("practice"))
